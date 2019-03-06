@@ -12,13 +12,6 @@
 		2C384C9919AF31EB00A2B2E8 /* STHALResourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C384C9819AF31EB00A2B2E8 /* STHALResourceTests.m */; };
 		2C384CA419AF32B900A2B2E8 /* STHALResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C384CA219AF32B900A2B2E8 /* STHALResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C384CA519AF32B900A2B2E8 /* STHALResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C384CA319AF32B900A2B2E8 /* STHALResource.m */; };
-		2C3B6D7819B7417300608424 /* libSTHAL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C21BFE619B3167F003E6622 /* libSTHAL.a */; };
-		2C3B6D7A19B741A400608424 /* STHALResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C384CA319AF32B900A2B2E8 /* STHALResource.m */; };
-		2C3B6D7B19B741A400608424 /* STHALLinks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5437F019AF34C000528AB4 /* STHALLinks.m */; };
-		2C3B6D7C19B741A400608424 /* STHALEmbeddedResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5437F419AF42E100528AB4 /* STHALEmbeddedResources.m */; };
-		2C3B6D7D19B741A500608424 /* STHALResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C384CA319AF32B900A2B2E8 /* STHALResource.m */; };
-		2C3B6D7E19B741A500608424 /* STHALLinks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5437F019AF34C000528AB4 /* STHALLinks.m */; };
-		2C3B6D7F19B741A500608424 /* STHALEmbeddedResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5437F419AF42E100528AB4 /* STHALEmbeddedResources.m */; };
 		2C5437F119AF34C000528AB4 /* STHALLinks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5437EF19AF34C000528AB4 /* STHALLinks.h */; };
 		2C5437F219AF34C000528AB4 /* STHALLinks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5437F019AF34C000528AB4 /* STHALLinks.m */; };
 		2C5437F519AF42E100528AB4 /* STHALEmbeddedResources.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5437F319AF42E100528AB4 /* STHALEmbeddedResources.h */; };
@@ -38,13 +31,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2C21BFFB19B318B9003E6622 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2C384C8019AF31EB00A2B2E8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2C21BFE519B3167F003E6622;
-			remoteInfo = "STHAL-ios";
-		};
 		2C5437F919AF57DE00528AB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2C384C8019AF31EB00A2B2E8 /* Project object */;
@@ -54,21 +40,7 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		2C21BFE419B3167F003E6622 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		2C21BFCE19B315E8003E6622 /* libSTHAL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTHAL.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C21BFE619B3167F003E6622 /* libSTHAL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTHAL.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C21BFF019B3167F003E6622 /* STHALTests-ios.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "STHALTests-ios.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2677B019B6726300D24A31 /* STHALPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = STHALPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2C384C8919AF31EB00A2B2E8 /* STHAL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STHAL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,25 +62,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2C21BFCB19B315E8003E6622 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2C21BFE319B3167F003E6622 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2C21BFED19B3167F003E6622 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C3B6D7819B7417300608424 /* libSTHAL.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,8 +112,6 @@
 			children = (
 				2C384C8919AF31EB00A2B2E8 /* STHAL.framework */,
 				2C384C9419AF31EB00A2B2E8 /* STHALTests-mac.xctest */,
-				2C21BFCE19B315E8003E6622 /* libSTHAL.a */,
-				2C21BFE619B3167F003E6622 /* libSTHAL.a */,
 				2C21BFF019B3167F003E6622 /* STHALTests-ios.xctest */,
 				CB651B62221BB32000EB09C0 /* STHAL.framework */,
 			);
@@ -200,13 +155,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2C21BFCC19B315E8003E6622 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2C384C8619AF31EB00A2B2E8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,40 +182,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2C21BFCD19B315E8003E6622 /* STHAL-mac */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2C21BFDC19B315E8003E6622 /* Build configuration list for PBXNativeTarget "STHAL-mac" */;
-			buildPhases = (
-				2C21BFCA19B315E8003E6622 /* Sources */,
-				2C21BFCB19B315E8003E6622 /* Frameworks */,
-				2C21BFCC19B315E8003E6622 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "STHAL-mac";
-			productName = STHAL;
-			productReference = 2C21BFCE19B315E8003E6622 /* libSTHAL.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		2C21BFE519B3167F003E6622 /* STHAL-ios */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2C21BFF419B3167F003E6622 /* Build configuration list for PBXNativeTarget "STHAL-ios" */;
-			buildPhases = (
-				2C21BFE219B3167F003E6622 /* Sources */,
-				2C21BFE319B3167F003E6622 /* Frameworks */,
-				2C21BFE419B3167F003E6622 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "STHAL-ios";
-			productName = STHAL;
-			productReference = 2C21BFE619B3167F003E6622 /* libSTHAL.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		2C21BFEF19B3167F003E6622 /* STHALTests-ios */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C21BFF719B3167F003E6622 /* Build configuration list for PBXNativeTarget "STHALTests-ios" */;
@@ -279,16 +193,15 @@
 			buildRules = (
 			);
 			dependencies = (
-				2C21BFFC19B318B9003E6622 /* PBXTargetDependency */,
 			);
 			name = "STHALTests-ios";
 			productName = STHALTests;
 			productReference = 2C21BFF019B3167F003E6622 /* STHALTests-ios.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2C384C8819AF31EB00A2B2E8 /* STHAL-mac-framework */ = {
+		2C384C8819AF31EB00A2B2E8 /* STHAL-mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C384C9C19AF31EB00A2B2E8 /* Build configuration list for PBXNativeTarget "STHAL-mac-framework" */;
+			buildConfigurationList = 2C384C9C19AF31EB00A2B2E8 /* Build configuration list for PBXNativeTarget "STHAL-mac" */;
 			buildPhases = (
 				2C384C8419AF31EB00A2B2E8 /* Sources */,
 				2C384C8519AF31EB00A2B2E8 /* Frameworks */,
@@ -299,7 +212,7 @@
 			);
 			dependencies = (
 			);
-			name = "STHAL-mac-framework";
+			name = "STHAL-mac";
 			productName = STHAL;
 			productReference = 2C384C8919AF31EB00A2B2E8 /* STHAL.framework */;
 			productType = "com.apple.product-type.framework";
@@ -322,9 +235,9 @@
 			productReference = 2C384C9419AF31EB00A2B2E8 /* STHALTests-mac.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CB651B4F221BB32000EB09C0 /* STHAL-ios-framework */ = {
+		CB651B4F221BB32000EB09C0 /* STHAL-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB651B5F221BB32000EB09C0 /* Build configuration list for PBXNativeTarget "STHAL-ios-framework" */;
+			buildConfigurationList = CB651B5F221BB32000EB09C0 /* Build configuration list for PBXNativeTarget "STHAL-iOS" */;
 			buildPhases = (
 				CB651B52221BB32000EB09C0 /* Sources */,
 				CB651B56221BB32000EB09C0 /* Frameworks */,
@@ -335,7 +248,7 @@
 			);
 			dependencies = (
 			);
-			name = "STHAL-ios-framework";
+			name = "STHAL-iOS";
 			productName = STHAL;
 			productReference = CB651B62221BB32000EB09C0 /* STHAL.framework */;
 			productType = "com.apple.product-type.framework";
@@ -349,12 +262,6 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Scott Talbot";
 				TargetAttributes = {
-					2C21BFCD19B315E8003E6622 = {
-						CreatedOnToolsVersion = 6.0;
-					};
-					2C21BFE519B3167F003E6622 = {
-						CreatedOnToolsVersion = 6.0;
-					};
 					2C21BFEF19B3167F003E6622 = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -378,12 +285,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C21BFCD19B315E8003E6622 /* STHAL-mac */,
-				2C384C8819AF31EB00A2B2E8 /* STHAL-mac-framework */,
-				2C384C9319AF31EB00A2B2E8 /* STHALTests-mac */,
-				2C21BFE519B3167F003E6622 /* STHAL-ios */,
+				CB651B4F221BB32000EB09C0 /* STHAL-iOS */,
 				2C21BFEF19B3167F003E6622 /* STHALTests-ios */,
-				CB651B4F221BB32000EB09C0 /* STHAL-ios-framework */,
+				2C384C8819AF31EB00A2B2E8 /* STHAL-mac */,
+				2C384C9319AF31EB00A2B2E8 /* STHALTests-mac */,
 			);
 		};
 /* End PBXProject section */
@@ -420,26 +325,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2C21BFCA19B315E8003E6622 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2C3B6D7F19B741A500608424 /* STHALEmbeddedResources.m in Sources */,
-				2C3B6D7E19B741A500608424 /* STHALLinks.m in Sources */,
-				2C3B6D7D19B741A500608424 /* STHALResource.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2C21BFE219B3167F003E6622 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2C3B6D7C19B741A400608424 /* STHALEmbeddedResources.m in Sources */,
-				2C3B6D7B19B741A400608424 /* STHALLinks.m in Sources */,
-				2C3B6D7A19B741A400608424 /* STHALResource.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2C21BFEC19B3167F003E6622 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -479,74 +364,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2C21BFFC19B318B9003E6622 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2C21BFE519B3167F003E6622 /* STHAL-ios */;
-			targetProxy = 2C21BFFB19B318B9003E6622 /* PBXContainerItemProxy */;
-		};
 		2C5437FA19AF57DE00528AB4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2C384C8819AF31EB00A2B2E8 /* STHAL-mac-framework */;
+			target = 2C384C8819AF31EB00A2B2E8 /* STHAL-mac */;
 			targetProxy = 2C5437F919AF57DE00528AB4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2C21BFDD19B315E8003E6622 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EXECUTABLE_PREFIX = lib;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				PRODUCT_NAME = STHAL;
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = macosx;
-			};
-			name = Debug;
-		};
-		2C21BFDE19B315E8003E6622 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = STHAL;
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = macosx;
-			};
-			name = Release;
-		};
-		2C21BFF519B3167F003E6622 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = STHAL;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-			};
-			name = Debug;
-		};
-		2C21BFF619B3167F003E6622 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = STHAL;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		2C21BFF819B3167F003E6622 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -836,24 +661,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C21BFDC19B315E8003E6622 /* Build configuration list for PBXNativeTarget "STHAL-mac" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2C21BFDD19B315E8003E6622 /* Debug */,
-				2C21BFDE19B315E8003E6622 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2C21BFF419B3167F003E6622 /* Build configuration list for PBXNativeTarget "STHAL-ios" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2C21BFF519B3167F003E6622 /* Debug */,
-				2C21BFF619B3167F003E6622 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2C21BFF719B3167F003E6622 /* Build configuration list for PBXNativeTarget "STHALTests-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -872,7 +679,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C384C9C19AF31EB00A2B2E8 /* Build configuration list for PBXNativeTarget "STHAL-mac-framework" */ = {
+		2C384C9C19AF31EB00A2B2E8 /* Build configuration list for PBXNativeTarget "STHAL-mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C384C9D19AF31EB00A2B2E8 /* Debug */,
@@ -890,7 +697,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB651B5F221BB32000EB09C0 /* Build configuration list for PBXNativeTarget "STHAL-ios-framework" */ = {
+		CB651B5F221BB32000EB09C0 /* Build configuration list for PBXNativeTarget "STHAL-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB651B60221BB32000EB09C0 /* Debug */,
