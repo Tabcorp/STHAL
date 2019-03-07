@@ -16,7 +16,7 @@
 		CB651B5B221BB32000EB09C0 /* STHALLinks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5437EF19AF34C000528AB4 /* STHALLinks.h */; };
 		CB651B5C221BB32000EB09C0 /* STHALResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C384CA219AF32B900A2B2E8 /* STHALResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB651B5D221BB32000EB09C0 /* STHALEmbeddedResources.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5437F319AF42E100528AB4 /* STHALEmbeddedResources.h */; };
-		CB651B6F221BBF9400EB09C0 /* STURITemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB651B6E221BBF9400EB09C0 /* STURITemplate.framework */; };
+		CB8D77842230A4C900AFA9B3 /* STURITemplate-ios-framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8D77832230A4C900AFA9B3 /* STURITemplate-ios-framework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +34,13 @@
 		2C5437F719AF4C2D00528AB4 /* STHALTypeSafety.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STHALTypeSafety.h; sourceTree = "<group>"; };
 		CB651B62221BB32000EB09C0 /* STHAL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STHAL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB651B6E221BBF9400EB09C0 /* STURITemplate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = STURITemplate.framework; path = Carthage/Build/iOS/STURITemplate.framework; sourceTree = "<group>"; };
+		CB8D777D2230A3D300AFA9B3 /* Project-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
+		CB8D777E2230A3D300AFA9B3 /* TestTarget.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TestTarget.xcconfig; sourceTree = "<group>"; };
+		CB8D777F2230A3D300AFA9B3 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
+		CB8D77802230A3D300AFA9B3 /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		CB8D77812230A3D300AFA9B3 /* FrameworkTarget-ios.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "FrameworkTarget-ios.xcconfig"; sourceTree = "<group>"; };
+		CB8D77822230A3D300AFA9B3 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
+		CB8D77832230A4C900AFA9B3 /* STURITemplate-ios-framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "STURITemplate-ios-framework.framework"; path = "Carthage/Build/iOS/STURITemplate-ios-framework.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB651B6F221BBF9400EB09C0 /* STURITemplate.framework in Frameworks */,
+				CB8D77842230A4C900AFA9B3 /* STURITemplate-ios-framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +67,7 @@
 			children = (
 				2C384C8B19AF31EB00A2B2E8 /* STHAL */,
 				2C384C9519AF31EB00A2B2E8 /* STHALTests */,
+				CB8D777C2230A3D300AFA9B3 /* Configuration */,
 				2C384C8A19AF31EB00A2B2E8 /* Products */,
 				CB651B64221BB39600EB09C0 /* Frameworks */,
 			);
@@ -87,7 +95,8 @@
 				2C5437F319AF42E100528AB4 /* STHALEmbeddedResources.h */,
 				2C5437F419AF42E100528AB4 /* STHALEmbeddedResources.m */,
 			);
-			path = STHAL;
+			name = STHAL;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		2C384C9519AF31EB00A2B2E8 /* STHALTests */ = {
@@ -96,15 +105,30 @@
 				2C384C9719AF31EB00A2B2E8 /* Info.plist */,
 				2C384C9819AF31EB00A2B2E8 /* STHALResourceTests.m */,
 			);
-			path = STHALTests;
+			name = STHALTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		CB651B64221BB39600EB09C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB8D77832230A4C900AFA9B3 /* STURITemplate-ios-framework.framework */,
 				CB651B6E221BBF9400EB09C0 /* STURITemplate.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB8D777C2230A3D300AFA9B3 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CB8D777D2230A3D300AFA9B3 /* Project-Release.xcconfig */,
+				CB8D777E2230A3D300AFA9B3 /* TestTarget.xcconfig */,
+				CB8D777F2230A3D300AFA9B3 /* Warnings.xcconfig */,
+				CB8D77802230A3D300AFA9B3 /* Project.xcconfig */,
+				CB8D77812230A3D300AFA9B3 /* FrameworkTarget-ios.xcconfig */,
+				CB8D77822230A3D300AFA9B3 /* Project-Debug.xcconfig */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +190,7 @@
 		2C384C8019AF31EB00A2B2E8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Scott Talbot";
 				TargetAttributes = {
 					2C21BFEF19B3167F003E6622 = {
@@ -233,17 +257,16 @@
 /* Begin XCBuildConfiguration section */
 		2C21BFF819B3167F003E6622 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB8D777E2230A3D300AFA9B3 /* TestTarget.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = STHALTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -254,13 +277,12 @@
 		};
 		2C21BFF919B3167F003E6622 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB8D777E2230A3D300AFA9B3 /* TestTarget.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = STHALTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,6 +294,7 @@
 		};
 		2C384C9A19AF31EB00A2B2E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB8D77822230A3D300AFA9B3 /* Project-Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -314,7 +337,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_LDFLAGS = "$(inherited)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -330,6 +353,7 @@
 		};
 		2C384C9B19AF31EB00A2B2E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB8D777D2230A3D300AFA9B3 /* Project-Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -368,7 +392,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_LDFLAGS = "$(inherited)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -384,6 +408,7 @@
 		};
 		CB651B60221BB32000EB09C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB8D77812230A3D300AFA9B3 /* FrameworkTarget-ios.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -395,7 +420,6 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = STHAL/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -405,12 +429,12 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "armv7s armv7 arm64e arm64";
 			};
 			name = Debug;
 		};
 		CB651B61221BB32000EB09C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB8D77812230A3D300AFA9B3 /* FrameworkTarget-ios.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -422,7 +446,6 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = STHAL/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -431,7 +454,6 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "armv7s armv7 arm64e arm64";
 			};
 			name = Release;
 		};
